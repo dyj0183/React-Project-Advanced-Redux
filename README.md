@@ -10,7 +10,7 @@ This is a simple project for using React to practice using Advanced Redux. I am 
 * Make sure you have Node.js & NPM installed on your machine
     * https://phoenixnap.com/kb/install-node-js-npm-on-windows
     * https://nodejs.org/en/download/ 
-* Run "git clone https://github.com/dyj0183/React-Movies-Project-Connect-To-API.git"
+* Run "git clone https://github.com/dyj0183/React-Project-Advanced-Redux.git"
 * Run "npm install"
 * Run "npm start" to view the running project
 
