@@ -3,13 +3,16 @@ import classes from "./ProductItem.module.css";
 
 // import useDispatch
 import { useDispatch } from "react-redux";
+// import cart actions
 import { cartActions } from "../../store/cart-slice";
 
 const ProductItem = (props) => {
+  // use destructors to get all the props out
 	const { id, title, price, description } = props;
 
 	const dispatch = useDispatch();
 
+  // this function will be called when users click on "Add to Cart" button
 	const addToCartHandler = () => {
 		// need to pass the new item data into this function
 		dispatch(
