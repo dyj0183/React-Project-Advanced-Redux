@@ -18,7 +18,7 @@ const cartSlice = createSlice({
             // if the item doesn't exist yet, we want to create a new one and push into the list
 			if (!existingItem) {
 				state.items.push({
-					itemId: newItem.id,
+					id: newItem.id,
 					price: newItem.price,
 					quantity: 1,
 					totalPrice: newItem.price,
@@ -34,7 +34,7 @@ const cartSlice = createSlice({
 			const id = action.payload;
 			const existingItem = state.items.find((item) => item.id === id);
             state.totalQuantity++;
-            
+
 			if (existingItem.quantity === 1) {
 				// filter returns a new array that matches the condition. we can use this way to remove the item from array
 				state.items = state.items.filter((item) => item.id !== id);
