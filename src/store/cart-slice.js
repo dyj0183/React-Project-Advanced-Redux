@@ -6,6 +6,7 @@ const cartSlice = createSlice({
 		items: [],
 		totalQuantity: 0,
 	},
+    // NEVER use any async codes or side effect inside the reducers
 	reducers: {
 		addItemToCart(state, action) {
             // get this from the new item when user click on "Add to Cart" button
